@@ -1,0 +1,149 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'kotlin-android'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 30
+    defaultConfig {
+        applicationId "com.example.chatbotui"
+        minSdk 24
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation "androidx.core:core-ktx:1.6.0"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    //noinspection GradleDependency
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.4.0')
+    //Authentication
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+
+    //Cloud Firestore
+    implementation 'com.google.firebase:firebase-firestore:23.0.3'
+
+    //Database
+    implementation 'com.google.firebase:firebase-database:20.0.2'
+
+    //Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    //Material Components
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //Volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //Barcode scanning
+    //implementation 'com.google.android.gms:play-services-vision:20.0.0'
+
+    //implementation 'com.google.firebase:firebase-ml-vision:24.0.3'
+    //implementation 'com.google.firebase:firebase-ml-vision-barcode-model:16.1.1'
+
+    //Google Sign-in
+    implementation 'com.google.android.gms:play-services-auth:20.5.0'
+
+    //Google Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+    //implementation 'com.google.android.gms:play-services-maps:17.0.0'
+
+    //Camera
+    implementation 'com.wonderkiln:camerakit:0.13.1'
+
+    //Spots Dialog
+    implementation 'com.github.d-max:spots-dialog:1.1@aar'
+
+    //Loading Button
+    implementation 'br.com.simplepass:loading-button-android:1.14.0'
+
+    //Recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    //Circle Imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //reminder
+    implementation 'com.github.alxrm:animated-clock-icon:1.0.2'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    //water suggestion
+    implementation 'androidx.preference:preference:1.1.0'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+
+
+}
+
+
+plugins {
+    id 'com.android.application'
+
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+
+    ...
+}
+
+dependencies {
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:31.3.0')
+
+
+    // TODO: Add the dependencies for Firebase products you want to use
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+
+
+    // Add the dependencies for any other desired Firebase products
+    // https://firebase.google.com/docs/android/setup#available-libraries
+}
+dependencies {
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.4.0')
+
+    // Declare the dependencies for the desired Firebase products without specifying versions
+    // For example, declare the dependencies for Firebase Authentication and Cloud Firestore
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+}

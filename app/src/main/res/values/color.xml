@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EA</color>
+    <color name="colorPrimaryDark">#5502C8</color>
+    <color name="colorAccent">#9D46FF</color>
+    <color name="themeColor">#11CFC5</color>
+
+    <color name="dark">#313C44</color>
+    <color name="darker">#151B20</color>
+    <color name="lightGray">#F9F9F9</color>
+    <color name="mediumGray">#D1D1D1</color>
+    <color name="darkGray">#4B4B4B</color>
+    <color name="lightMediumGray">#80D1D1D1</color>
+
+    <color name="darkTextColor">#020000</color>
+    <color name="contentTextColor">#020000</color>
+    <color name="register_bk_color">#11CFC5</color>
+    <color name="login_bk_color">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+    <color name="purple_200">#1E1D1D</color>
+    <color name="purple_500">#1E1D1D</color>
+    <color name="purple_700">#1E1D1D</color>
+    <!-- purple 700 ka change for title bar -->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="trans">#00000000</color>
+    <color name="warn">#FF1313</color>
+    <color name="halfwarn">#483FC8</color>
+    <color name="cyan">#008577</color>
+    <color name="darkGreen">#00574B</color>
+    <color name="pink">#D81B60</color>
+    <color name="colorLightGreen">#34ea07</color>
+    <color name="colorDarkGreen">#0b6c02</color>
+    <color name="colorMidGreen">#2A8C11</color>
+
+    <color name="background_top">#F4F4F4</color>
+    <color name="light_blue">#7cccec</color>
+    <color name="light_blue_transparent">#8099D0E6</color>
+    <color name="light_blue_border">#4cbce4</color>
+    <color name="blue">#4cbce4</color>
+    <color name="blue_header_calendar_trasparent">#804CBCE4</color>
+    <color name="blue_header_calendar">#0085B5</color>
+    <color name="blue_dark">#186066</color>
+    <color name="text_color">#222</color>
+
+    <color name="statusBarColor">@color/colorPrimaryDark</color>
+    <color name="cardBackgroundColor">@color/white</color>
+    <color name="titleColor">@color/darker</color>
+    <color name="backgroundColor">@color/lightGray</color>
+    <color name="strokeColor">@color/lightMediumGray</color>
+    <color name="buttonColor">@color/colorPrimary</color>
+    <color name="actionBarBackgroundColor">@color/colorPrimary</color>
+    <color name="contextualActionBarColor">@color/dark</color>
+
+    <color name="deep_sky_blue">#1a73e8</color> <!-- colorPrimary in Light mode-->
+    <color name="warm_blue">#574ddd</color> <!-- colorPrimaryDark in Light mode-->
+    <color name="carolina_blue">#8ab4f8</color> <!-- colorPrimary in Dark mode-->
+    <color name="cornflower_blue">#669DF6</color> <!-- colorPrimaryDark in Dark mode-->
+
+    <color name="teal">#069f86</color>
+    <color name="bright_light_blue">#27e5fd</color>
+    <color name="sun_yellow">#fcd230</color>
+    <color name="bright_orange">#ff6c00</color>
+
+    <!--    <color name="black">#000</color>-->
+    <color name="transparent">#0fff</color>
+
+    <color name="color_primary">@color/deep_sky_blue</color>
+    <color name="color_primary_dark">@color/warm_blue</color>
+    <color name="color_on_secondary">@color/white</color>
+
+    <color name="color_control_light">#39000000</color> <!-- Same as textColorPrimary disabled -->
+
+    <!-- Scrim colors -->
+    <color name="system_ui_scrim_light">#B3FFFFFF</color> <!-- 70% white -->
+    <color name="system_ui_scrim_black">#40000000</color> <!-- 25% black -->
+
+    <!-- We use a dark scrim by default since light status is API 23+ -->
+    <color name="status_bar_scrim">@color/system_ui_scrim_black</color>
+    <!-- We use a dark scrim by default since light nav bar is API 27+ -->
+    <color name="nav_bar_scrim">@color/system_ui_scrim_black</color>
+
+    <!-- Other colors with dark mode alternatives -->
+    <color name="wifi_card_background">#e8f0fe</color>
+    <color name="event_card_header_background">@color/event_card_header_background_light</color>
+    <color name="list_divider">#1f000000</color>>
+
+    <!-- Other colors -->
+    <color name="default_tag_color">#999</color>
+    <color name="light_grey">#e6e6e6</color>
+    <color name="scrim">#33000000</color> <!-- 20% black -->
+
+    <color name="event_card_header_background_light">#f8f9fa</color>
+    <color name="event_card_header_background_dark">#252729</color>
+
+    <integer-array name="swipe_refresh">
+        <item>@color/deep_sky_blue</item>
+        <item>@color/teal</item>
+        <item>@color/bright_light_blue</item>
+        <item>@color/sun_yellow</item>
+        <item>@color/bright_orange</item>
+    </integer-array>
+
+    <color name="grey">#e7e7e6</color>
+
+    <item name="purple" type="color">#FFAA66CC</item>
+    <color name="green" type="color">#FF99CC00</color>
+    <item name="orange" type="color">#FFFFBB33</item>
+    <color name="red" type="color">#ff4444</color>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+</resources>
